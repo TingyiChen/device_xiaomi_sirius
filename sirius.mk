@@ -49,3 +49,7 @@ PRODUCT_BOOT_JARS += \
 # VNDK
 PRODUCT_PACKAGES += \
     vndk_package
+
+# VNDK-SP
+PRODUCT_PACKAGES += \
+    vndk-sp
