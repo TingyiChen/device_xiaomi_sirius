@@ -137,6 +137,9 @@
     <!-- Period of time in which to consider light samples in milliseconds. -->
     <integer name="config_autoBrightnessAmbientLightHorizon">16000</integer>
 
+    <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
+    <bool name="config_intrusiveNotificationLed">true</bool>
+
     <!-- User activity timeout: Maximum screen dim duration as a percentage of screen off timeout.
 
          This resource is similar to config_maximumScreenDimDuration but the maximum
