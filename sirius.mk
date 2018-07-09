@@ -82,6 +82,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/uinput-goodix.kl:system/usr/keylayout/uinput-goodix.kl \
     $(LOCAL_PATH)/keylayout/sdm670-mtp-snd-card_Button_Jack.kl:system/usr/keylayout/sdm670-mtp-snd-card_Button_Jack.kl
 
+# Light
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-service.xiaomi_sirius
+
 # LiveDisplay
 PRODUCT_PACKAGES += \
     lineage.livedisplay@2.0-service-sdm
