@@ -18,7 +18,10 @@ on boot
     chmod 660 /sys/class/leds/white/start_idx
     chmod 660 /sys/class/backlight/panel0-backlight/brightness
 
-service light-hal-2-0 /system/bin/hw/android.hardware.light@2.0-service.xiaomi_sirius
+service vendor.light-hal-2-0 /system/bin/hw/android.hardware.light@2.0-service.xiaomi_sirius
+    interface android.hardware.light@2.0::ILight default
     class hal
     user system
     group system
+    # shutting off lights while powering-off
+    shutdown critical
