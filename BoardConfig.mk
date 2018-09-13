@@ -49,6 +49,9 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno616
 # Assert
 TARGET_OTA_ASSERT_DEVICE := sirius
 
+# ANT+
+BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
+
 # Audio
 USE_XML_AUDIO_POLICY_CONF := 1
 
