@@ -2,5 +2,9 @@
   {
     "repository": "android_kernel_xiaomi_sdm710",
     "target_path": "kernel/xiaomi/sdm710"
+  },
+  {
+    "repository": "android_packages_resources_devicesettings",
+    "target_path": "packages/resources/devicesettings"
   }
 ]
