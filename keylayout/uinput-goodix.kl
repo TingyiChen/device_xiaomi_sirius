@@ -1,0 +1,4 @@
+#key indicates finger down in home key mode
+#key  102   DPAD_CENTER  VIRTUAL
+#key indicates irq received
+#key  106   DPAD_RIGHT   VIRTUAL
