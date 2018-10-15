@@ -65,7 +65,8 @@ PRODUCT_COPY_FILES += \
  PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
     $(LOCAL_PATH)/keylayout/uinput-fpc.kl:system/usr/keylayout/uinput-fpc.kl \
-    $(LOCAL_PATH)/keylayout/uinput-goodix.kl:system/usr/keylayout/uinput-goodix.kl
+    $(LOCAL_PATH)/keylayout/uinput-goodix.kl:system/usr/keylayout/uinput-goodix.kl \
+    $(LOCAL_PATH)/keylayout/sdm670-mtp-snd-card_Button_Jack.kl:system/usr/keylayout/sdm670-mtp-snd-card_Button_Jack.kl
 
 # Media
 PRODUCT_COPY_FILES += \
