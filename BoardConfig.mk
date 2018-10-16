@@ -112,6 +112,7 @@ TARGET_RIL_VARIANT := caf
 
 # Sepolicy
 include device/qcom/sepolicy/sepolicy.mk
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 
 # Treble
 BOARD_VNDK_RUNTIME_DISABLE := true
