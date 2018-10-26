@@ -245,7 +245,7 @@ persist.chg.max_volt_mv=9000
 ro.cutoff_voltage_mv=3400
 
 #white list for aux cameras
-vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.miui.cit,com.qualcomm.qti.qmmi
+vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap
 vendor.camera.aux.packagelist.ext=,com.xiaomi.biometric,com.xiaomi.biometric.haldemo
 
 #adjust voice call volume steps
