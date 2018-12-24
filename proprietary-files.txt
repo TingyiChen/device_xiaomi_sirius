@@ -130,6 +130,9 @@ framework/QtiTelephonyServicelibrary.jar
 lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 
+# Soter
+-app/SoterService/SoterService.apk
+
 # Xiaomi HIDL
 lib64/vendor.xiaomi.hardware.citsensorservice@1.0.so
 lib64/vendor.xiaomi.hardware.citsensorservice@1.1.so
