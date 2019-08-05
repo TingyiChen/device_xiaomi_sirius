@@ -165,5 +165,8 @@ PRODUCT_FULL_TREBLE_OVERRIDE := true
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flag 2
 
+# WiFi
+WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
+
 # Inherit from the proprietary stuffs
 -include vendor/xiaomi/sirius/BoardConfigVendor.mk
