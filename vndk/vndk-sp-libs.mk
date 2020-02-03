@@ -14,11 +14,14 @@ VNDK_SP_LIBRARIES := \
     libbase \
     libbcinfo \
     libblas \
+    libbufferhubqueue \
     libc++ \
     libcompiler_rt \
     libcutils \
     libft2 \
+    libgui \
     libhardware \
+    libharfbzz_ng \
     libhidlbase \
     libhidlmemory \
     libhidltransport \
@@ -26,6 +29,7 @@ VNDK_SP_LIBRARIES := \
     libion \
     liblzma \
     libpng \
+    libstdc++ \
     libunwind \
     libunwindstack \
     libutils \
