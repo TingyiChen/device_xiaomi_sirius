@@ -42,28 +42,12 @@ vendor/lib/libacdbloader.so
 vendor/lib/libacdbrtac.so
 
 # Audio
-vendor/etc/audio.scd
-vendor/lib64/hw/audio.primary.sdm710.so
 vendor/lib64/libadiertac.so
 vendor/lib64/libaudcal.so
-vendor/lib64/libaudioalsa.so
-vendor/lib64/libaudio_log_utils.so
-vendor/lib64/libaudioroute_ext.so
-vendor/lib64/libnwa.so
 vendor/lib64/libqtigef.so
-vendor/lib64/libsse.so
-vendor/lib64/libtinycompress_vendor.so
-vendor/lib/hw/audio.primary.sdm710.so
 vendor/lib/libadiertac.so
-vendor/lib/libadm.so
 vendor/lib/libaudcal.so
-vendor/lib/libaudioalsa.so
-vendor/lib/libaudio_log_utils.so
-vendor/lib/libaudioroute_ext.so
-vendor/lib/libnwa.so
 vendor/lib/libqtigef.so
-vendor/lib/libsse.so
-vendor/lib/libtinycompress_vendor.so
 
 # Audio Amplifier
 vendor/etc/tas2557_aac.ftcfg
@@ -722,6 +706,7 @@ vendor/lib/libkeymasterprovision.so
 vendor/lib/libkeymasterutils.so
 
 # Listen
+vendor/etc/audio.scd
 vendor/lib64/hw/sound_trigger.primary.sdm710.so
 vendor/lib64/libcapiv2svacnn.so
 vendor/lib64/libcapiv2vop.so
@@ -732,6 +717,8 @@ vendor/lib64/libgcs.so
 vendor/lib64/liblistenjni.so
 vendor/lib64/liblistensoundmodel2.so
 vendor/lib64/libmulawdec.so
+vendor/lib64/libnwa.so
+vendor/lib64/libsse.so
 vendor/lib/hw/sound_trigger.primary.sdm710.so
 vendor/lib/libadpcmdec.so
 vendor/lib/libcapiv2svacnn.so
@@ -744,6 +731,8 @@ vendor/lib/libsmwrapper.so
 vendor/lib/liblistenjni.so
 vendor/lib/liblistensoundmodel2.so
 vendor/lib/libmulawdec.so
+vendor/lib/libnwa.so
+vendor/lib/libsse.so
 
 # Media
 lib64/extractors/libmmparser.so
