@@ -11,8 +11,6 @@ ro.vendor.display.ad.sdr_calib_data=/vendor/etc/sdr_config.cfg
 ro.vendor.display.ad.hdr_calib_data=/vendor/etc/hdr_config.cfg
 ro.vendor.display.sensortype=2
 
-ro.xiaomi.bl.notify=0
-
 #system property for paper mode
 sys.paper_mode_max_level=32
 
@@ -380,7 +378,6 @@ ro.vendor.audio.sos=true
 vendor.audio.voice.receiver.status=off
 vendor.voice.path.for.pcm.voip=true
 ro.df.effect.conflict=1
-persist.vendor.df.extcolor.proc=0
 sys.haptic.down.weak=3
 sys.haptic.down.normal=8
 sys.haptic.down.strong=18
