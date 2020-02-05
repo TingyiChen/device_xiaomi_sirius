@@ -1,0 +1,24 @@
+on init
+    chown system system /dev/goodix_fp
+    chmod 0644 /dev/goodix_fp
+
+on boot
+    chown system system /sys/devices/platform/soc/soc:fingerprint_fpc/device_prepare
+    chown system system /sys/devices/platform/soc/soc:fingerprint_fpc/modalias
+    chown system system /sys/devices/platform/soc/soc:fingerprint_fpc/fingerdown_wait
+    chmod 0220 /sys/devices/platform/soc/soc:fingerprint_fpc/fingerdown_wait
+    chown system system /sys/devices/platform/soc/soc:fingerprint_fpc/irq
+    chmod 0660 /sys/devices/platform/soc/soc:fingerprint_fpc/irq
+    chown system system /sys/devices/platform/soc/soc:fingerprint_fpc/hw_reset
+    chmod 0660 /sys/devices/platform/soc/soc:fingerprint_fpc/hw_reset
+    chown system system /sys/devices/platform/soc/soc:fingerprint_fpc/wakeup_enable
+    chmod 0660 /sys/devices/platform/soc/soc:fingerprint_fpc/wakeup_enable
+
+on post-fs-data
+    mkdir /data/vendor/fpc 0770 system system
+    mkdir /data/vendor/goodix 0770 system system
+
+service vendor.fps_hal /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sirius
+    class late_start
+    user system
+    group system input
