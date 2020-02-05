@@ -1,4 +1,6 @@
 on boot
+    write /sys/class/leds/white/max_brightness 20
+
     chown system system /sys/class/leds/white/brightness
 
     chown system system /sys/class/leds/white/blink
