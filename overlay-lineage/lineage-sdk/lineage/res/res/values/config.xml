@@ -58,6 +58,24 @@
          pulsating and RGB control would set this config to 75. -->
     <integer name="config_deviceLightCapabilities">232</integer>
 
+    <!-- Display mode remapping table.
+         If the mode names returned by the backend do not match
+         the predefined and translated strings in the Settings
+         app, they can be remapped here. The format is
+         "oldname:newname", one per entry. -->
+    <string-array name="config_displayModeMappings" translatable="false">
+        <item>00-default:Default</item>
+        <item>01-warm:Warm</item>
+        <item>02-cool:Cool</item>
+        <item>sRGB_native:sRGB</item>
+        <item>sRGB_d65:sRGB-D65</item>
+        <item>P3_ce_0821:DCI-P3</item>
+        <item>hal_hdr:HDR</item>
+    </string-array>
+
+    <!-- Should we filter any display modes which are unampped? -->
+    <bool name="config_filterDisplayModes">true</bool>
+
     <!-- Whether device has screen with higher aspect ratio -->
     <bool name="config_haveHigherAspectRatioScreen">true</bool>
 
