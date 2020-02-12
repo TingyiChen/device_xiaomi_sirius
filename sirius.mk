@@ -15,6 +15,9 @@ $(call inherit-product-if-exists, vendor/xiaomi/sirius/sirius-vendor.mk)
 TARGET_SCREEN_WIDTH := 1080
 TARGET_SCREEN_HEIGHT := 2244
 
+# Properties
+$(call inherit-product, $(LOCAL_PATH)/properties.mk)
+
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
