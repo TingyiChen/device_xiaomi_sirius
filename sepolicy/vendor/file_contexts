@@ -28,6 +28,9 @@
 /vendor/bin/hw/android\.hardware\.power@1\.2-service\.xiaomi_sirius                                     u:object_r:hal_power_default_exec:s0
 /vendor/bin/hw/vendor\.lineage\.livedisplay@2\.0-service\.xiaomi_sirius                                 u:object_r:hal_lineage_livedisplay_qti_exec:s0
 
+# IR
+/dev/lirc0                                    u:object_r:lirc_device:s0
+
 # Persist files
 /mnt/vendor/persist/audio(/.*)?               u:object_r:persist_audio_file:s0
 /mnt/vendor/persist/camera(/.*)?              u:object_r:persist_camera_file:s0
