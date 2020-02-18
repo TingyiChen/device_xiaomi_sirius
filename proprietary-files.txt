@@ -943,6 +943,7 @@ vendor/radio/qcril_database/upgrade/3_version_update_wps_config.sql
 
 # Sensors
 vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service
+vendor/bin/chre
 vendor/bin/sensors.qti
 vendor/bin/sscrpcd
 vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc
