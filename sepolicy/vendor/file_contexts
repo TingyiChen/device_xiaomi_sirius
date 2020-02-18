@@ -31,6 +31,10 @@
 # IR
 /dev/lirc0                                    u:object_r:lirc_device:s0
 
+# Keylayout
+/vendor/usr/idc(/.*)?                           u:object_r:vendor_keylayout_file:s0
+/vendor/usr/keylayout(/.*)?                     u:object_r:vendor_keylayout_file:s0
+
 # Persist files
 /mnt/vendor/persist/audio(/.*)?               u:object_r:persist_audio_file:s0
 /mnt/vendor/persist/camera(/.*)?              u:object_r:persist_camera_file:s0
