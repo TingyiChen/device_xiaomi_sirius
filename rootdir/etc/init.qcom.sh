@@ -27,16 +27,19 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
-start_msm_irqbalance()
-{
-	if [ -f /vendor/bin/msm_irqbalance ]; then
-		start vendor.msm_irqbalance
-	fi
-}
+boot_reason=`cat /proc/sys/kernel/boot_reason`
+reboot_reason=`getprop ro.boot.alarmboot`
+if [ "$boot_reason" = "3" ] || [ "$reboot_reason" = "true" ]; then
+    setprop ro.vendor.alarm_boot true
+else
+    setprop ro.vendor.alarm_boot false
+fi
 
-echo 1 > /proc/sys/net/ipv6/conf/default/accept_ra_defrtr
-
-start_msm_irqbalance
+# Copy GPU frequencies to vendor property
+if [ -f /sys/class/kgsl/kgsl-3d0/gpu_available_frequencies ]; then
+    gpu_freq=`cat /sys/class/kgsl/kgsl-3d0/gpu_available_frequencies` 2> /dev/null
+    setprop vendor.gpu.available_frequencies "$gpu_freq"
+fi
 
 #
 # Make modem config folder and copy firmware config to that folder for RIL

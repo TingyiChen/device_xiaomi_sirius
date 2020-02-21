@@ -399,3 +399,9 @@ firmware_directories /vendor/firmware_mnt/image/
 # Elliptic
 /dev/elliptic0                 0644   system       system
 /dev/elliptic1                 0644   system       system
+
+# LIRC
+/dev/lirc0                     0660   system       system
+
+# TAS2557
+/dev/tiload_node               0660   system       system
