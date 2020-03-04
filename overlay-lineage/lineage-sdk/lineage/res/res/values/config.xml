@@ -64,13 +64,12 @@
          app, they can be remapped here. The format is
          "oldname:newname", one per entry. -->
     <string-array name="config_displayModeMappings" translatable="false">
-        <item>00-default:Default</item>
+        <item>00-default:Standard</item>
         <item>01-warm:Warm</item>
         <item>02-cool:Cool</item>
-        <item>sRGB_native:sRGB</item>
-        <item>sRGB_d65:sRGB-D65</item>
-        <item>P3_ce_0821:DCI-P3</item>
-        <item>hal_hdr:HDR</item>
+        <item>papermode31:Reading</item>
+        <item>sRGB_native:srgb</item>
+        <item>P3_ce_0821:dci_p3</item>
     </string-array>
 
     <!-- Should we filter any display modes which are unampped? -->
